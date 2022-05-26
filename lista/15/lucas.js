@@ -5,8 +5,8 @@
 const prompt = require('prompt-sync')({})
 
 const lerDiasTrabalhados = () =>  {
-    let diasTrabalhados = parseInt(prompt("Digite o número de dias trabalhados: "))
-    diasTrabalhados = diasTrabalhados*25*8
-    console.log("Levando em consideração seus dias trabalhados, seu salário é de: R$ ", diasTrabalhados)
+    let diasSalario = parseInt(prompt("Digite o número de dias trabalhados: "))
+    diasSalario = diasSalario*25*8
+    console.log("Levando em consideração seus dias trabalhados, seu salário é de: R$ ", diasSalario)
 }
 lerDiasTrabalhados(); 

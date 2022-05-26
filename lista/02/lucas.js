@@ -4,8 +4,8 @@
 // Olá João da Silva, é um prazer te conhecer!
 const prompt = require('prompt-sync')({})
 
-const nome = () => {
+const perguntarNome = () => {
     let nome = prompt ("Qual o seu nome? ")
     console.log ("Olá", nome, "é um prazer te conhecer!")
 }
-nome()
+perguntarNome()

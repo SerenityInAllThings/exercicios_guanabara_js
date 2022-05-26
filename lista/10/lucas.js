@@ -3,11 +3,11 @@
 // sabendo que cada litro de tinta pinta uma área de 2metros quadrados.
 const prompt = require('prompt-sync')({})
 
-const dimensões = () => {
+const calcularDimensões = () => {
     let largura = prompt ("Qual a largura de sua parede: ")    
     let altura = prompt("e sua altura: ")    
     let mQuadrado = largura*altura
     console.log ("Para pintar a área total serão necessários "+mQuadrado/2+" litros de tinta")
 }
 
-dimensões()
+calcularDimensões()

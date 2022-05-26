@@ -4,8 +4,8 @@
 const prompt = require('prompt-sync')({})
 
 const lerPreços = () => {
-   let preço = parseInt(prompt("Digite um preço: ")) 
-   console.log ("O PREÇO PROMOCIONAL DO PRODUTO É DE: ", preço*0.95)
+   let preço = parseFloat(prompt("Digite um preço: ")) 
+   console.log ("O PREÇO PROMOCIONAL DO PRODUTO É DE: ", preço * 0.95)
 }
 
 lerPreços();

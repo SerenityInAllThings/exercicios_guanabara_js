@@ -7,8 +7,8 @@
 const prompt = require('prompt-sync')({})
 
 const monstrarMédia = () => {
-  let notaUm = parseInt(prompt("Qual foi sua primeira nota?: "))
-  let notaDois = parseInt(prompt("E sua segunda?: "))
+  let notaUm = parseFloat(prompt("Qual foi sua primeira nota?: "))
+  let notaDois = parseFloat(prompt("E sua segunda?: "))
   console.log ("A média entre", notaUm, "e", notaDois, "é igual a", (notaUm+notaDois) / 2)
 }
 monstrarMédia()
