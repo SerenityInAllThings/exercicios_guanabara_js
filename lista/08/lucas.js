@@ -12,7 +12,7 @@
 const prompt = require('prompt-sync')({})
 
 const distância = () => {
-    let valorNum = prompt ("Digite um número: ")
+    let valorNum = parseFloat(prompt("Digite um número: "))
     console.log ("A distância do número " +valorNum+" corresponde a:")
     console.log (valorNum/1000+"Km")
     console.log (valorNum*100+"Hm")

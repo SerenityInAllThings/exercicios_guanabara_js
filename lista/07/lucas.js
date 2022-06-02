@@ -7,7 +7,7 @@
 const prompt = require('prompt-sync')({})
 
 const mostrarNumRealDobroTerc = () => {
-    let numero = parseInt(prompt("Digite um número: "))
+    let numero = parseFloat(prompt("Digite um número: "))
     console.log ("O dobro de",numero,"é",numero*2, "a terça parte de",numero,"é",numero/3)
 }
 mostrarNumRealDobroTerc();
