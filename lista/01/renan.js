@@ -4,13 +4,13 @@
 // Já que devemos retornar se o valor é uma string ou não, podemos representar isso com um
 // Booleano (true ou false)
 function isString(valorIndeterminado) {
-  let tipo = typeof valorIndeterminado
-  // return result
-  if (tipo == "string") {
-    return true
-  } else {
-    return false
-  }
+    let tipo = typeof valorIndeterminado
+    // return result
+    if (tipo == "string") {
+        return true
+    } else {
+        return false
+    }
 }
 
 let ehString = isString()

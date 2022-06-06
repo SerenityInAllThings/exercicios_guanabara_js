@@ -5,11 +5,11 @@
 // Escrever lógicas em funções
 // Usar sintaxe de arrow function
 
-const prompt = require('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const contarCigarrosFumados = () => {
     let cigarrosFumados = parseInt(prompt("Digite o número de cigarros fumados:"))
-    cigarrosFumados = cigarrosFumados*10/60/24
+    cigarrosFumados = (cigarrosFumados * 10) / 60 / 24
     console.log(cigarrosFumados)
 }
-contarCigarrosFumados();
+contarCigarrosFumados()

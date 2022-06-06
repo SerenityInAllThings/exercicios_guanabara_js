@@ -13,11 +13,11 @@ O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho.*/
 // bota pra mama geral
 
 function splitBySpace(valor) {
-  if (valor === undefined) {
-    return undefined
-  }
-  const resultado = valor.split(" ")
-  return resultado
+    if (valor === undefined) {
+        return undefined
+    }
+    const resultado = valor.split(" ")
+    return resultado
 }
 
 let result = splitBySpace("meu teste")
