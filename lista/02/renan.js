@@ -9,23 +9,23 @@ Olá João da Silva, é um prazer te conhecer! */
 // Escrever fn
 function isBlank(valor) {
   if (valor === "") {
-    return true;
+    return true
   } else {
-    return false;
+    return false
   }
 }
 
-let valores = [false, "texto", "", undefined];
-valores.push(undefined);
+let valores = [false, "texto", "", undefined]
+valores.push(undefined)
 
-let index = 0;
+let index = 0
 while (index < valores.length) {
-  const valorAtual = valores[index];
-  const resultado = isBlank(valorAtual);
-  console.log(resultado);
-  console.log(index);
-  console.log(valorAtual);
-  index++;
+  const valorAtual = valores[index]
+  const resultado = isBlank(valorAtual)
+  console.log(resultado)
+  console.log(index)
+  console.log(valorAtual)
+  index++
 }
 
 // for (let index = 0; index < valores.length; index++) {
