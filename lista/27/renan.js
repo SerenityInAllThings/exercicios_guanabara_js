@@ -4,18 +4,18 @@
 //  - Média entre 5.0 e 6.9: RECUPERAÇÃO
 //  - Média 7.0 ou superior: APROVADO
 
-const prompt = require('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const calcularMedia = () => {
     let nota1 = parseFloat(prompt("Digite o primeiro valor.\n"))
     let nota2 = parseFloat(prompt("Digite o segundo valor.\n"))
-    let media = (nota1+nota2)/2
-    console.log (media)
-    if(media<5){        
-        console.log ("REPROVADO")
-    }else if(media>=5 && media<7){
+    let media = (nota1 + nota2) / 2
+    console.log(media)
+    if (media < 5) {
+        console.log("REPROVADO")
+    } else if (media >= 5 && media < 7) {
         console.log("RECUPERAÇÃO")
-    }else{
+    } else {
         console.log("APROVADO")
     }
 }

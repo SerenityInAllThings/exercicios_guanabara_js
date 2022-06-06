@@ -5,16 +5,16 @@
 // Digite o incremento: 2
 // Contagem: 3 5 7 9 Acabou!
 
-const prompt = require ('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const contarIncrementar = () => {
     let inicialContagem = parseInt(prompt("Insira o valor inicial da contagem."))
     let finalContagem = parseInt(prompt("Insira o valor final da contagem."))
     const incremento = parseInt(prompt("Insira o valor que será incrementado."))
-    while (inicialContagem<finalContagem){
+    while (inicialContagem < finalContagem) {
         console.log(inicialContagem)
         inicialContagem += incremento
-        if(inicialContagem>finalContagem){
+        if (inicialContagem > finalContagem) {
             console.log("Acabou!")
         }
     }

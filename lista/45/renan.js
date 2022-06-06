@@ -8,21 +8,21 @@
 // maior que o último. Resolva esse problema com um código que funcione em qualquer
 // situação.
 
-const prompt = require ('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const contarIncrementar = () => {
     let inicialContagem = parseInt(prompt("Insira o valor inicial da contagem."))
     let finalContagem = parseInt(prompt("Insira o valor final da contagem."))
     const incremento = parseInt(prompt("Insira o valor que será incrementado."))
     let temp
-    if(finalContagem<inicialContagem){
+    if (finalContagem < inicialContagem) {
         temp = inicialContagem
         inicialContagem = finalContagem
         finalContagem = temp
-        while (inicialContagem<finalContagem){
+        while (inicialContagem < finalContagem) {
             console.log(inicialContagem)
             inicialContagem += incremento
-            if(inicialContagem>finalContagem){
+            if (inicialContagem > finalContagem) {
                 console.log("Acabou!")
             }
         }

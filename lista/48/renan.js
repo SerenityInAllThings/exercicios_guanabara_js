@@ -4,12 +4,12 @@ const prompt = require(`prompt-sync`)({})
 
 const somarInputados = () => {
     let i = 0
-    let soma = 0 
-    while(i != 7){
-    i+=1
-    let inputado = parseInt(prompt("Digite o número inteiro para somar."))      
-    soma = inputado + soma
-    }console.log(soma)
+    let soma = 0
+    while (i != 7) {
+        i += 1
+        let inputado = parseInt(prompt("Digite o número inteiro para somar."))
+        soma = inputado + soma
+    }
+    console.log(soma)
 }
 somarInputados()
-

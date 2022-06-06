@@ -14,13 +14,13 @@ const calcularVidaSaudavel = () => {
     let pontuação = 0
     let faturamento = 0.05
     const horasAtividade = parseInt(prompt("Digite quantas horas de atividade física fizeste este mês."))
-    if(horasAtividade <= 10){
-        pontuação *= horasAtividade*2
-    }else if(horasAtividade <= 20 && horasAtividade > 10){
-        pontuação = horasAtividade*5
-    }else if(horasAtividade > 20){
-        pontuação = horasAtividade*10
+    if (horasAtividade <= 10) {
+        pontuação *= horasAtividade * 2
+    } else if (horasAtividade <= 20 && horasAtividade > 10) {
+        pontuação = horasAtividade * 5
+    } else if (horasAtividade > 20) {
+        pontuação = horasAtividade * 10
     }
-    console.log(pontuação*faturamento)
+    console.log(pontuação * faturamento)
 }
 calcularVidaSaudavel()

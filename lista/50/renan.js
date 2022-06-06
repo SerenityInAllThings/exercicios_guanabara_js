@@ -24,24 +24,43 @@ const s17 = Math.ceil(Math.random() * 10)
 const s18 = Math.ceil(Math.random() * 10)
 const s19 = Math.ceil(Math.random() * 10)
 const s20 = Math.ceil(Math.random() * 10)
-console.log(s01,s02,s03,s04,s05,s06,s07,s08,s09,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20)
+console.log(
+    s01,
+    s02,
+    s03,
+    s04,
+    s05,
+    s06,
+    s07,
+    s08,
+    s09,
+    s10,
+    s11,
+    s12,
+    s13,
+    s14,
+    s15,
+    s16,
+    s17,
+    s18,
+    s19,
+    s20
+)
 let condicaoB = 0
 let condicaoC = 0
-if(s01>5){
-    condicaoB+=1
+if (s01 > 5) {
+    condicaoB += 1
 }
 
+const prompt = require("prompt-sync")({})
 
-
-const prompt = require('prompt-sync')({})
-
-const jogoLegalprakrl  = () => {
+const jogoLegalprakrl = () => {
     const randomChute = Math.ceil(Math.random() * 5)
     const chute = prompt("Chuta um número até 5, otário.\n")
-    if(chute==randomChute){
+    if (chute == randomChute) {
         console.log("N-não é possível, o otário é clarividente!\n")
-    }else{
+    } else {
         console.log("Errou, otário.")
     }
 }
-jogoLegalprakrl ()
+jogoLegalprakrl()

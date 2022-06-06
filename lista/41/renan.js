@@ -3,10 +3,10 @@
 
 const contadorAcabou = () => {
     let n = 105
-    while(n > 0){
+    while (n > 0) {
         n = n - 5
         console.log(n)
-        if(n == 0){
+        if (n == 0) {
             console.log("Acabou!")
         }
     }

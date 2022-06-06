@@ -9,22 +9,23 @@
 // Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado
 // da altura)
 
-const prompt = require('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const calcularIMC = () => {
     const altura = parseFloat(prompt("Digite sua altura em metros."))
     const peso = parseFloat(prompt("Digite o seu peso em kg."))
-    let imc = peso/(altura*altura)
-    if(imc < 18.5){
+    let imc = peso / (altura * altura)
+    if (imc < 18.5) {
         console.log("Abaixo do peso")
-    }else if(imc>18.5 && imc<25){
+    } else if (imc > 18.5 && imc < 25) {
         console.log("Peso ideal")
-    }else if(imc>25 && imc<30){
+    } else if (imc > 25 && imc < 30) {
         console.log("Sobrepeso")
-    }else if(imc>30 && imc<40){
+    } else if (imc > 30 && imc < 40) {
         console.log("Obesidade")
-    }else if(imc>40){
+    } else if (imc > 40) {
         console.log("Obesidade mórbida")
-    }console.log(imc)
+    }
+    console.log(imc)
 }
 calcularIMC()

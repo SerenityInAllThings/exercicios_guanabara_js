@@ -11,27 +11,27 @@
 //  - Até 200Km percorridos: R$0,30 por Km
 //  - Acima de 200Km percorridos: R$0,25 por Km
 
-const prompt = require('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const calcularAluguel = () => {
     const carroTipo = prompt("Digite se o seu carro é popular ou luxuoso.").toString()
     const diasQuantidade = parseInt(prompt("Digite o número de dias que o carro foi alugado."))
     const kmPercorrido = parseInt(prompt("Digite a km percorrida."))
-    if(carroTipo.toLowerCase = "popular"){
-        if(kmPercorrido>100){
-            let valorDiaria = 90*diasQuantidade+kmPercorrido/0.1
-            console.log(valorDiaria+"a")
-        }else if(kmPercorrido<=100){
-            let valorDiaria = 90*diasQuantidade+kmPercorrido/0.2
-            console.log(valorDiaria+"b")
+    if ((carroTipo.toLowerCase = "popular")) {
+        if (kmPercorrido > 100) {
+            let valorDiaria = 90 * diasQuantidade + kmPercorrido / 0.1
+            console.log(valorDiaria + "a")
+        } else if (kmPercorrido <= 100) {
+            let valorDiaria = 90 * diasQuantidade + kmPercorrido / 0.2
+            console.log(valorDiaria + "b")
         }
-    }else if (carroTipo.toLowerCase = "luxuoso"){
-        if(kmPercorrido<=200){
-            let valorDiaria = 150*diasQuantidade+kmPercorrido/0.3
-            console.log(valorDiaria+"c")
-        }else if(kmPercorrido>200){
-            let valorDiaria = 150*diasQuantidade+kmPercorrido/0.25
-            console.log(valorDiaria+"d")
+    } else if ((carroTipo.toLowerCase = "luxuoso")) {
+        if (kmPercorrido <= 200) {
+            let valorDiaria = 150 * diasQuantidade + kmPercorrido / 0.3
+            console.log(valorDiaria + "c")
+        } else if (kmPercorrido > 200) {
+            let valorDiaria = 150 * diasQuantidade + kmPercorrido / 0.25
+            console.log(valorDiaria + "d")
         }
     }
 }

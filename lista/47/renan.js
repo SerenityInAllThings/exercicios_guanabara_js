@@ -4,9 +4,10 @@
 const mostrarResultado = () => {
     let i = 500
     let soma = 0
-    while(i>0){
+    while (i > 0) {
         soma = soma + i
-        i = i -50
-    }console.log(soma)
+        i = i - 50
+    }
+    console.log(soma)
 }
 mostrarResultado()

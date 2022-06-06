@@ -3,10 +3,10 @@
 
 const contadorAcabou = () => {
     let n = -3
-    while(n<19){
-        n = n+3
+    while (n < 19) {
+        n = n + 3
         console.log(n)
-        if(n == 18){
+        if (n == 18) {
             console.log("Acabou!")
         }
     }

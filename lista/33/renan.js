@@ -3,17 +3,17 @@
 // em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que
 // ela não pode exceder 30% do salário ou então o empréstimo será negado.
 
-const prompt = require('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
 const aprovadorEmprestimo = () => {
     const valorCasa = parseFloat(prompt("Digue o valor da tua casa.\n"))
     const valorSalario = parseFloat(prompt("Digue o valor do teu salário.\n"))
     const anos = parseInt(prompt("Em quantos anos você paga a casa?"))
-    let prestação = valorCasa/(anos*12)
-    if((valorSalario*0.3) > prestação){
+    let prestação = valorCasa / (anos * 12)
+    if (valorSalario * 0.3 > prestação) {
         console.log("Empréstimo bancário aprovado.")
-    }else{
-        console.log("Empréstimo bancário negado.")   
+    } else {
+        console.log("Empréstimo bancário negado.")
     }
 }
 aprovadorEmprestimo()

@@ -5,18 +5,18 @@
 //  - Homens ganham 5% de desconto
 //  - Mulheres ganham 13% de desconto
 
-const prompt = require('prompt-sync')({})
+const prompt = require("prompt-sync")({})
 
-const aplicadorDesconto = () => {    
+const aplicadorDesconto = () => {
     let nome = prompt(`Digite seu nome.\n`).toString()
     let sexo = prompt(`Digite seu sexo.\n`)
     let valorCompras = parseFloat(prompt(`Digite o valor da compra\n`))
-    if (sexo.toLowerCase() == "masculino"){
+    if (sexo.toLowerCase() == "masculino") {
         let desconto = valorCompras * 0.05
-        console.log(nome+sexo+(valorCompras-desconto))
-    }else {
+        console.log(nome + sexo + (valorCompras - desconto))
+    } else {
         let desconto = valorCompras * 0.13
-        console.log(nome+sexo+(valorCompras-desconto))
+        console.log(nome + sexo + (valorCompras - desconto))
     }
 }
 aplicadorDesconto()

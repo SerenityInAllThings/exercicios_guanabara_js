@@ -6,12 +6,14 @@
 // alistamento.
 const prompt = require(`prompt-sync`)({})
 
-const verificadorAlistamento = () => {    
-  const idadeCidadao = parseInt(prompt("Digite a sua idade, cidadão."))
-  const idadeAlistamento = 18
-  if(idadeCidadao<idadeAlistamento){
-    console.log("Cidadão, falta somente:"+ (idadeAlistamento-idadeCidadao))
-  }else 
-    console.log(idadeCidadao-idadeAlistamento +" é o número de anos que já se passaram desde o alistamento")    
-} 
+const verificadorAlistamento = () => {
+    const idadeCidadao = parseInt(prompt("Digite a sua idade, cidadão."))
+    const idadeAlistamento = 18
+    if (idadeCidadao < idadeAlistamento) {
+        console.log("Cidadão, falta somente:" + (idadeAlistamento - idadeCidadao))
+    } else
+        console.log(
+            idadeCidadao - idadeAlistamento + " é o número de anos que já se passaram desde o alistamento"
+        )
+}
 verificadorAlistamento()
