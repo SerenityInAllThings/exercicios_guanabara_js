@@ -1,10 +1,10 @@
 const prompt = require("prompt-sync")()
 
-const isNotNumeric = (text) => {
-    text.split("")
+const isNotNumeric = (text) =>
+    text
+        .split("")
         .filter((c) => c !== " ")
         .every(isNaN)
-}
 
 const hasContent = (text) => text != null && text.length > 0
 
